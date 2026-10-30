@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8e2eb">
+<meta name="description" content="Ana Essenci — perfumaria multimarcas em Nerópolis, Goiás.">
+<title>Ana Essenci | Sua perfumaria</title>
+<style>
+:root{--pink:#d9578b;--deep:#bd3f75;--soft:#fbeaf1;--pale:#fff7fa;--ink:#30252b;--muted:#786a71;--line:#f1dce5;--shadow:0 14px 38px rgba(154,69,105,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--pale);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}.container{width:min(1100px,calc(100% - 40px));margin:auto}
+.topbar{background:#fff;border-bottom:1px solid var(--line);color:var(--deep);text-align:center;padding:8px 14px;font-size:.83rem;font-weight:650}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;text-decoration:none}.brand img{width:160px;max-height:66px;object-fit:contain;display:block}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{text-decoration:none;font-size:.92rem;color:#62535b;font-weight:600;transition:color .2s}.nav-links a:hover{color:var(--deep)}.nav-links .nav-cta{background:var(--pink);color:#fff;padding:11px 18px;border-radius:999px;box-shadow:0 7px 18px rgba(217,87,139,.2)}
+.hero{position:relative;overflow:hidden;padding:86px 0 78px;background:radial-gradient(circle at 90% 20%,rgba(255,255,255,.95),transparent 22rem),linear-gradient(130deg,#f9dce8,#fff7fa 54%,#fceaf1)}.hero:after{content:"✦";position:absolute;right:8%;bottom:8%;color:rgba(217,87,139,.16);font-size:110px;transform:rotate(14deg);pointer-events:none}.hero-content{max-width:720px;position:relative;z-index:1}.eyebrow,.kicker{color:var(--deep);font-size:.78rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.eyebrow{display:inline-block;background:rgba(255,255,255,.75);border:1px solid rgba(217,87,139,.15);padding:7px 13px;border-radius:999px}h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(2.65rem,7vw,5rem);letter-spacing:-.055em;line-height:1.04;margin:22px 0 18px;color:#462d39}h1 span{color:var(--deep)}.hero p{max-width:590px;color:#69535e;font-size:1.08rem;margin:0}.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 22px;border:1px solid transparent;border-radius:999px;text-decoration:none;font-weight:750;font-size:.94rem;transition:transform .22s,box-shadow .22s,background .22s,border-color .22s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn:active{transform:translateY(-1px) scale(.98)}.primary{color:#fff;background:linear-gradient(135deg,var(--pink),var(--deep));box-shadow:0 10px 24px rgba(189,63,117,.23)}.primary:hover{box-shadow:0 14px 28px rgba(189,63,117,.3)}.secondary{color:var(--deep);background:#fff;border-color:#edcbd9}.secondary:hover{box-shadow:var(--shadow);border-color:var(--pink)}
+section{padding:76px 0}.heading{text-align:center;max-width:650px;margin:0 auto 36px}.heading h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1.15;letter-spacing:-.035em;margin:9px 0 12px;color:#432d37}.heading p{color:var(--muted);margin:0}.brands{background:#fff}.brand-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.brand-card{min-height:145px;display:grid;place-items:center;padding:24px;background:#fff;border:1px solid #f2e4ea;border-radius:18px;box-shadow:0 5px 20px rgba(80,42,59,.035);transition:transform .25s,box-shadow .25s,border-color .25s}.brand-card:hover{transform:translateY(-5px);border-color:#edc2d3;box-shadow:var(--shadow)}.brand-card img{width:min(100%,190px);height:78px;object-fit:contain;display:block}
+.shop{background:linear-gradient(135deg,#fbeaf1,#fff7fa)}.shop-panel{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:34px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:clamp(26px,5vw,52px);box-shadow:var(--shadow)}.shop-panel p{color:var(--muted);margin:0 0 23px}.shop-art{min-height:220px;border-radius:22px;background:radial-gradient(circle at 50% 45%,#fff 0 23%,transparent 24%),linear-gradient(145deg,#f9dce8,#fceef3);display:grid;place-items:center;color:var(--deep);font-size:4.4rem}
+.benefits{background:#fff}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{padding:27px 22px;border-radius:19px;background:var(--pale);border:1px solid var(--line);text-align:center}.benefit-icon{width:52px;height:52px;display:grid;place-items:center;margin:0 auto 14px;border-radius:50%;color:var(--deep);background:#fff;font-size:1.4rem}.benefit h3{font-size:1rem;margin:0 0 6px}.benefit p{font-size:.9rem;color:var(--muted);margin:0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.info-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 7px 24px rgba(154,69,105,.055)}.info-card h3{margin:0 0 9px;font-size:1.05rem}.info-card p{color:var(--muted);margin:0;overflow-wrap:anywhere}.info-card a{color:var(--deep);font-weight:650;text-decoration:none}.info-card a:hover{text-decoration:underline}.address{grid-column:1/-1}
+.company{background:#fff;border-top:1px solid var(--line);padding:30px 0}.company-inner{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;text-align:center;color:var(--muted);font-size:.85rem}.company strong{color:#55444c}
+footer{padding:28px 0;color:#fff;background:var(--deep);text-align:center}footer p{margin:5px 0;font-size:.88rem;color:rgba(255,255,255,.88)}footer a{color:#fff;text-decoration:none}
+.wa-float{position:fixed;z-index:30;right:22px;bottom:22px;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:#25d366;color:#fff;font-size:1.65rem;text-decoration:none;box-shadow:0 8px 24px rgba(24,160,75,.28);animation:pulse 2.8s infinite;transition:transform .2s}.wa-float:hover{transform:scale(1.09)}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.28),0 8px 24px rgba(24,160,75,.25)}50%{box-shadow:0 0 0 10px rgba(37,211,102,0),0 8px 24px rgba(24,160,75,.25)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:760px){.nav{min-height:72px}.brand img{width:135px;max-height:58px}.nav-links{gap:13px}.nav-links a:not(.nav-cta){display:none}.hero{padding:67px 0 62px}.brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.brand-card{min-height:120px;padding:17px}.brand-card img{height:65px}.shop-panel{grid-template-columns:1fr}.shop-art{min-height:150px}.benefit-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.address{grid-column:auto}section{padding:60px 0}}
+@media(max-width:420px){.container{width:calc(100% - 30px)}.nav-cta{padding:10px 14px;font-size:.82rem!important}.hero-actions{flex-direction:column;align-items:stretch}.btn{width:100%}.brand-card{min-height:105px}.wa-float{width:54px;height:54px;right:15px;bottom:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="topbar">Entrega grátis em Nerópolis – GO • Consulte condições para outras localidades</div>
+<header><div class="container nav">
+<a class="brand" href="#inicio" aria-label="Ana Essenci - início"><img src="assets/logo/logo.png" alt="Logo Ana Essenci"></a>
+<nav class="nav-links" aria-label="Navegação principal"><a href="#marcas">Marcas</a><a href="#retirada">Retirada</a><a href="#contato">Contato</a><a class="nav-cta" href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">Visitar loja</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container"><div class="hero-content reveal">
+<span class="eyebrow">✦ Perfumaria multimarcas</span>
+<h1>Sua essência.<br><span>Seu jeito de encantar.</span></h1>
+<p>Na Ana Essenci, você encontra fragrâncias para diferentes estilos e momentos. Escolha seus favoritos, faça seu pedido e receba no conforto da sua casa.</p>
+<div class="hero-actions"><a class="btn primary" href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">🛍️ Conheça nossa loja</a><a class="btn secondary" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">Fale pelo WhatsApp</a></div>
+</div></div></section>
+<section class="brands" id="marcas"><div class="container">
+<div class="heading reveal"><span class="kicker">Um universo de fragrâncias</span><h2>Marcas que você encontra aqui</h2><p>Explore opções de perfumaria feminina e masculina e encontre uma fragrância com a sua personalidade.</p></div>
+<div class="brand-grid">
+<div class="brand-card reveal"><img src="assets/marcas/oboticario.png" alt="O Boticário" loading="lazy"></div>
+<div class="brand-card reveal"><img src="assets/marcas/eudora.png" alt="Eudora" loading="lazy"></div>
+<div class="brand-card reveal"><img src="assets/marcas/oui.png" alt="O.U.i" loading="lazy"></div>
+<div class="brand-card reveal"><img src="assets/marcas/avon.png" alt="Avon" loading="lazy"></div>
+<div class="brand-card reveal"><img src="assets/marcas/natura.png" alt="Natura" loading="lazy"></div>
+<div class="brand-card reveal"><img src="assets/marcas/arabe.png" alt="Perfumes árabes" loading="lazy"></div>
+</div></div></section>
+<section class="shop" id="loja"><div class="container"><div class="shop-panel reveal">
+<div><span class="kicker">Sua próxima fragrância está aqui</span><h2>Encontre seu novo favorito</h2><p>Acesse nossa loja virtual para conferir os produtos disponíveis, conhecer as opções e fazer seu pedido com praticidade.</p><a class="btn primary" href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">Acessar loja virtual ↗</a></div>
+<div class="shop-art" aria-hidden="true">✿</div>
+</div></div></section>
+<section class="benefits" id="retirada"><div class="container">
+<div class="heading reveal"><span class="kicker">Comprar com tranquilidade</span><h2>Praticidade em cada pedido</h2><p>Escolha a forma mais conveniente de receber sua encomenda.</p></div>
+<div class="benefit-grid">
+<article class="benefit reveal"><div class="benefit-icon">🚚</div><h3>Entrega grátis</h3><p>Entrega grátis em Nerópolis, Goiás.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">📍</div><h3>Retirada disponível</h3><p>Combine seu pedido e retire no endereço da loja.</p></article>
+<article class="benefit reveal"><div class="benefit-icon">💬</div><h3>Atendimento pelo WhatsApp</h3><p>Fale com a Ana Essenci para tirar dúvidas sobre sua encomenda.</p></article>
+</div></div></section>
+<section id="contato"><div class="container">
+<div class="heading reveal"><span class="kicker">Estamos à disposição</span><h2>Entre em contato</h2><p>Será um prazer ajudar você a escolher sua próxima fragrância.</p></div>
+<div class="contact-grid">
+<article class="info-card reveal"><h3>WhatsApp</h3><p><a href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">Chame a Ana Essenci</a></p></article>
+<article class="info-card reveal"><h3>E-mail</h3><p><a href="mailto:loja.anaessenci@gmail.com">loja.anaessenci@gmail.com</a></p></article>
+<article class="info-card address reveal"><h3>Endereço para retirada</h3><p>Rua Tancredo Neves, Setor São Paulo, Quadra 18, Lote 7 — Nerópolis, Goiás.</p></article>
+</div></div></section>
+<section class="company"><div class="container"><div class="company-inner"><span><strong>CNPJ:</strong> 68.366.211/0001-86</span><span><strong>Responsável:</strong> Geovane Inacio da Silva</span><span><strong>Nome fantasia:</strong> Ana Essenci</span></div></div></section>
+</main>
+<footer><div class="container"><strong>Ana Essenci</strong><p>Sua perfumaria, sua essência.</p><p>© <span id="year">2026</span> Ana Essenci. Todos os direitos reservados.</p><p><a href="mailto:loja.anaessenci@gmail.com">loja.anaessenci@gmail.com</a></p></div></footer>
+<a class="wa-float" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Ana Essenci pelo WhatsApp" title="Fale conosco pelo WhatsApp">✆</a>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const items = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); obs.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(item => observer.observe(item));
+} else { items.forEach(item => item.classList.add("visible")); }
+</script>
+</body>
+</html>
