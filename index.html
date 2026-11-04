@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f8dce8">
-<meta name="description" content="Ana Essenci: perfumes femininos e masculinos. Encontre sua próxima fragrância e receba grátis em Nerópolis, Goiás.">
-<title>Ana Essenci | Perfumes que combinam com você</title>
+<meta name="description" content="Descubra perfumes femininos e masculinos na Ana Essenci. Encontre fragrâncias para cada estilo e ocasião. Peça pelo WhatsApp ou compre em nossa loja virtual.">
+<title>Ana Essenci | Encontre a fragrância da sua essência</title>
 <style>
 :root{
   --pink:#e85b98;--pink-dark:#c83f7d;--pink-soft:#fff0f6;--pink-pale:#fff8fb;
@@ -14,57 +14,60 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--pink-pale);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5}
+body{margin:0;background:var(--pink-pale);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.55}
 a{color:inherit}
-.top-strip{background:#fff;border-bottom:1px solid var(--line);height:39px;display:flex;align-items:center;justify-content:center;overflow:hidden;color:var(--pink-dark);font-size:13px;font-weight:750;letter-spacing:.01em}
-.top-message{display:none;align-items:center;gap:8px;white-space:nowrap;animation:fade .35s ease}
-.top-message.active{display:flex}
+.top-strip{background:#fff;border-bottom:1px solid var(--line);min-height:40px;display:flex;align-items:center;justify-content:center;overflow:hidden;color:var(--pink-dark);font-size:13px;font-weight:750;letter-spacing:.01em;padding:8px 12px;text-align:center}
+.top-message{display:none;align-items:center;gap:8px;white-space:normal}
+.top-message.active{display:flex;animation:fade .35s ease}
 @keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 .page{width:min(100% - 32px,620px);margin:0 auto}
 header{text-align:center;padding:35px 0 23px}
 .logo{width:clamp(112px,29vw,150px);height:clamp(112px,29vw,150px);object-fit:contain;border-radius:50%;background:#fff;padding:9px;box-shadow:0 5px 24px rgba(190,64,119,.12);border:1px solid #f5dce7}
-h1{font-size:clamp(29px,7vw,38px);line-height:1.12;letter-spacing:-1.2px;color:var(--pink-dark);margin:19px 0 8px;font-weight:850}
-.tagline{font-size:15px;color:#69565f;margin:0 auto 8px;max-width:440px}
-.location{font-size:13px;color:var(--pink-dark);font-weight:650;margin:0}
+h1{font-size:clamp(30px,7vw,39px);line-height:1.12;letter-spacing:-1.2px;color:var(--pink-dark);margin:19px 0 9px;font-weight:850}
+.tagline{font-size:15px;color:#69565f;margin:0 auto 8px;max-width:460px}
+.eyebrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--pink-dark);font-weight:800;margin:0 0 7px}
 main{padding-bottom:25px}
 .card{background:#fff;border:1px solid rgba(231,185,207,.65);border-radius:19px;padding:19px 20px;margin:0 0 15px;box-shadow:var(--shadow)}
 .whatsapp-card{padding:0;overflow:hidden}
 .whatsapp-link{display:flex;align-items:center;gap:15px;text-decoration:none;color:#fff;padding:18px 20px;background:linear-gradient(115deg,#ee659e,#d94383);transition:filter .2s,transform .2s}
 .whatsapp-link:hover{filter:brightness(1.04)}
 .whatsapp-link:active{transform:scale(.99)}
-.wa-logo{width:39px;height:39px;object-fit:contain;flex:0 0 39px}
+.official-icon{width:40px;height:40px;flex:0 0 40px}
 .whatsapp-link strong{display:block;font-size:18px;line-height:1.25}
-.whatsapp-link small{display:block;font-size:13px;opacity:.94;margin-top:3px}
+.whatsapp-link small{display:block;font-size:13px;opacity:.96;margin-top:3px}
 .card-heading{display:flex;align-items:center;gap:11px;margin:0 0 7px;font-size:17px;font-weight:800}
-.card-icon{width:34px;height:34px;border-radius:11px;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink-dark);font-size:17px;flex:0 0 34px}
-.card-sub{margin:0 0 0 45px;color:var(--muted);font-size:13px}
-.contact-number{display:block;text-align:center;text-decoration:none;color:var(--pink-dark);font-size:21px;font-weight:850;margin-top:8px}
-.contact-caption{text-align:center;color:var(--muted);font-size:13px;margin:4px 0 0}
-.social-card{text-align:center;padding:21px}
-.social-card h2{font-size:17px;margin:0 0 7px}
-.social-card p{color:var(--muted);font-size:13px;margin:0 0 13px}
-.social-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.social-actions a{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:10px 15px;border-radius:999px;background:var(--pink-soft);color:var(--pink-dark);font-size:13px;font-weight:750;text-decoration:none;transition:transform .2s,background .2s}
-.social-actions a:hover{transform:translateY(-2px);background:#fce0ec}
-.section-title{text-align:center;margin:29px 0 13px}
-.section-title h2{font-size:20px;letter-spacing:-.4px;margin:0;color:#432d38}
-.section-title p{font-size:13px;color:var(--muted);margin:5px 0 0}
-.brand-carousel-wrap{position:relative}
-.brand-carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 13px}
-.brand-carousel::-webkit-scrollbar{display:none}
-.brand-item{flex:0 0 145px;height:100px;display:grid;place-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 5px 15px rgba(154,55,101,.06);scroll-snap-align:center}
-.brand-item img{width:100%;height:65px;object-fit:contain}
-.carousel-hint{text-align:center;color:#9a7b89;font-size:11px;margin:-4px 0 17px}
+.card-icon{width:38px;height:38px;border-radius:12px;background:var(--pink-soft);display:grid;place-items:center;flex:0 0 38px}
+.card-sub{margin:0 0 0 49px;color:var(--muted);font-size:13px}
 .store-link{display:flex;align-items:center;justify-content:space-between;gap:15px;text-decoration:none}
 .store-link strong{display:block;font-size:16px}
 .store-link small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
-.arrow{color:var(--pink-dark);font-size:22px;font-weight:800}
-footer{margin-top:10px;padding:24px 12px 28px;text-align:center;color:#fff;background:linear-gradient(110deg,#d94383,#ef75a9)}
-footer strong{font-size:16px}
-footer p{font-size:12px;margin:5px 0 0;color:rgba(255,255,255,.92)}
-.legal{font-size:10px!important;opacity:.85;margin-top:10px!important}
-.floating-wa{position:fixed;right:17px;bottom:17px;width:55px;height:55px;background:#fff;border-radius:50%;display:grid;place-items:center;box-shadow:0 5px 20px rgba(0,0,0,.16);z-index:10;border:1px solid #e7d8df;transition:transform .2s}
-.floating-wa img{width:35px;height:35px;object-fit:contain}
+.arrow{color:var(--pink-dark);font-size:24px;font-weight:800}
+.contact-row{display:flex;align-items:center;gap:13px;text-decoration:none}
+.contact-row + .contact-row{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.contact-row strong{display:block;font-size:15px}
+.contact-row small{display:block;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+.gmail-icon{width:38px;height:32px;flex:0 0 38px}
+.section-title{text-align:center;margin:29px 0 15px}
+.section-title h2{font-size:21px;letter-spacing:-.4px;margin:0;color:#432d38}
+.section-title p{font-size:13px;color:var(--muted);margin:5px 0 0}
+.brand-carousel-wrap{overflow:hidden;position:relative;padding:3px 0 13px}
+.brand-track{display:flex;gap:13px;width:max-content;animation:brandScroll 27s linear infinite}
+.brand-carousel-wrap:hover .brand-track,.brand-carousel-wrap:focus-within .brand-track{animation-play-state:paused}
+.brand-item{flex:0 0 145px;height:100px;display:grid;place-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 5px 15px rgba(154,55,101,.06)}
+.brand-item img{width:100%;height:65px;object-fit:contain}
+@keyframes brandScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.social-card{text-align:center;padding:22px}
+.social-card h2{font-size:19px;margin:0 0 7px;color:#432d38}
+.social-card p{color:var(--muted);font-size:13px;margin:0 0 14px}
+.social-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.social-actions a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--pink-soft);color:var(--pink-dark);font-size:13px;font-weight:750;text-decoration:none;transition:transform .2s,background .2s}
+.social-actions a:hover{transform:translateY(-2px);background:#fce0ec}
+footer{margin-top:10px;padding:25px 12px 29px;text-align:center;color:#fff;background:linear-gradient(110deg,#d94383,#ef75a9)}
+footer strong{font-size:17px}
+footer p{font-size:12px;margin:5px 0 0;color:rgba(255,255,255,.94)}
+.legal{font-size:11px!important;opacity:.9;margin-top:12px!important}
+.floating-wa{position:fixed;right:17px;bottom:17px;width:57px;height:57px;background:#fff;border-radius:50%;display:grid;place-items:center;box-shadow:0 5px 20px rgba(0,0,0,.16);z-index:10;border:1px solid #e7d8df;transition:transform .2s}
+.floating-wa svg{width:39px;height:39px}
 .floating-wa:hover{transform:scale(1.07)}
 @media(min-width:700px){header{padding-top:43px}.card{padding:21px 23px}.whatsapp-card{padding:0}.brand-item{flex-basis:160px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
@@ -72,91 +75,108 @@ footer p{font-size:12px;margin:5px 0 0;color:rgba(255,255,255,.92)}
 </head>
 <body>
 <div class="top-strip" aria-live="polite">
-  <span class="top-message active">🚚 Entregamos para toda Nerópolis!</span>
-  <span class="top-message">💗 Entrega grátis direto na sua casa!</span>
+  <span class="top-message active">✨ Sua próxima fragrância favorita está aqui</span>
+  <span class="top-message">💗 Perfumes para todos os estilos e ocasiões</span>
+  <span class="top-message">📦 Compre online com praticidade e segurança</span>
 </div>
-
 <div class="page">
 <header id="inicio">
   <img class="logo" src="assets/logo/logo.png" alt="Logo Ana Essenci">
+  <p class="eyebrow">PERFUMARIA • FEMININO E MASCULINO</p>
   <h1>Ana Essenci</h1>
-  <p class="tagline">Seu perfume favorito pode estar a um clique de você. ✨</p>
-  <p class="location">📍 Nerópolis – GO</p>
+  <p class="tagline">Sua essência merece uma fragrância inesquecível. Descubra perfumes que combinam com sua personalidade, seu estilo e cada momento especial.</p>
 </header>
-
 <main>
   <section class="card whatsapp-card" aria-label="Atendimento pelo WhatsApp">
     <a class="whatsapp-link" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">
-      <img class="wa-logo" src="assets/logo-whatsapp/whatsapp.png" alt="">
-      <span><strong>Peça pelo WhatsApp</strong><small>Tire suas dúvidas e faça seu pedido com a gente</small></span>
+      <svg class="official-icon" viewBox="0 0 48 48" role="img" aria-label="WhatsApp" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" fill="#fff"/>
+        <path fill="#25D366" d="M24 7.5a16.2 16.2 0 0 0-13.9 24.5L8 40l8.2-2.1A16.2 16.2 0 1 0 24 7.5Zm0 29.3c-2.5 0-4.9-.7-7-2l-.5-.3-4.9 1.3 1.3-4.8-.3-.5a13.2 13.2 0 1 1 11.4 6.3Z"/>
+        <path fill="#25D366" d="M19.3 16.8c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.8.1-1.2.6s-1.5 1.5-1.5 3.6 1.5 4.1 1.7 4.4 2.9 4.7 7.1 6.4c3.5 1.4 4.2 1.1 5 .9s2.6-1.1 3-2.1.4-1.9.3-2.1-.4-.3-.9-.6-2.6-1.3-3-1.4-.7-.2-1 .3-1.1 1.4-1.4 1.7-.5.4-1 .1a12 12 0 0 1-3.5-2.2 13.2 13.2 0 0 1-2.4-3c-.3-.5 0-.7.2-1 .2-.2.5-.6.7-.8.2-.3.3-.5.5-.8.1-.3.1-.6 0-.8l-1.8-4.5Z"/>
+      </svg>
+      <span><strong>Fale com a Ana Essenci</strong><small>Peça pelo WhatsApp, tire dúvidas e encontre a fragrância ideal para você.</small></span>
     </a>
   </section>
 
   <section class="card" aria-label="Loja virtual">
     <a class="store-link" href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">
       <span>
-        <span class="card-heading"><span class="card-icon">🛍️</span>Nossa loja virtual</span>
-        <small class="card-sub">Escolha sua fragrância e confira as opções disponíveis</small>
+        <span class="card-heading"><span class="card-icon">🛍️</span>Navegue pela loja virtual</span>
+        <small class="card-sub">Explore nossas fragrâncias e escolha seu próximo perfume favorito.</small>
       </span>
       <span class="arrow" aria-hidden="true">›</span>
     </a>
   </section>
 
-  <section class="card" aria-label="Endereço para retirada">
-    <h2 class="card-heading"><span class="card-icon">📍</span>Retire seu pedido</h2>
-    <p class="card-sub">Rua Tancredo Neves, Setor São Paulo, Quadra 18, Lote 7 — Nerópolis, GO.</p>
-  </section>
-
-  <section class="card" aria-label="Contato">
-    <h2 class="card-heading"><span class="card-icon">☎</span>Fale com a gente</h2>
-    <p class="contact-caption">Atendimento e pedidos pelo WhatsApp</p>
-    <a class="contact-number" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">Chamar agora</a>
+  <section class="card" aria-label="Canais de contato">
+    <a class="contact-row" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">
+      <svg class="official-icon" viewBox="0 0 48 48" role="img" aria-label="WhatsApp" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="22" fill="#25D366"/>
+        <path fill="#fff" d="M24 10.2a13.7 13.7 0 0 0-11.8 20.7l-1.8 6.1 6.3-1.7A13.7 13.7 0 1 0 24 10.2Zm0 24.8c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-4.1 1.1 1.1-4-.3-.4A11.1 11.1 0 1 1 24 35Z"/>
+        <path fill="#fff" d="M20 17.8c-.3-.5-.5-.6-.8-.6h-.7c-.3 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.7c.2.2 2.4 3.9 5.9 5.3 2.9 1.2 3.5 1 4.1.8.6-.1 2.1-.9 2.4-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.1-.1-1.1-1.2-1.3-1.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7L20 17.8Z"/>
+      </svg>
+      <span><strong>WhatsApp</strong><small>Atendimento e pedidos diretamente com a nossa equipe.</small></span>
+    </a>
+    <a class="contact-row" href="mailto:loja.anaessenci@gmail.com">
+      <svg class="gmail-icon" viewBox="0 0 48 36" role="img" aria-label="Gmail" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#4285F4" d="M4 34h7V16L4 10v22c0 1.1-.0 2 0 2Z"/>
+        <path fill="#34A853" d="M37 34h7V10l-7 6v18Z"/>
+        <path fill="#EA4335" d="M4 10l3.9 3 3.1 2.4L24 25.5l13-10.1 3.1-2.4L44 10V7c0-2.5-2.9-3.9-4.9-2.3L24 16.1 8.9 4.7C6.9 3.1 4 4.5 4 7v3Z"/>
+        <path fill="#C5221F" d="M4 10l7 6V8.8L8.9 4.7C6.9 3.1 4 4.5 4 7v3Z"/>
+        <path fill="#FBBC04" d="M37 8.8V16l7-6V7c0-2.5-2.9-3.9-4.9-2.3L37 6.3v2.5Z"/>
+      </svg>
+      <span><strong>E-mail</strong><small>loja.anaessenci@gmail.com</small></span>
+    </a>
   </section>
 
   <section aria-label="Marcas disponíveis">
     <div class="section-title">
-      <h2>Marcas que você encontra aqui</h2>
-      <p>Tem aquela fragrância que combina com você.</p>
+      <h2>Marcas que fazem parte da nossa seleção</h2>
+      <p>Grandes nomes, diferentes estilos e fragrâncias para você se apaixonar.</p>
     </div>
-    <div class="brand-carousel-wrap">
-      <div class="brand-carousel" id="brandCarousel">
-        <div class="brand-item"><img src="assets/marcas/oboticario.png" alt="O Boticário" loading="lazy"></div>
-        <div class="brand-item"><img src="assets/marcas/eudora.png" alt="Eudora" loading="lazy"></div>
-        <div class="brand-item"><img src="assets/marcas/oui.png" alt="O.U.i" loading="lazy"></div>
-        <div class="brand-item"><img src="assets/marcas/avon.png" alt="Avon" loading="lazy"></div>
-        <div class="brand-item"><img src="assets/marcas/natura.png" alt="Natura" loading="lazy"></div>
-        <div class="brand-item"><img src="assets/marcas/arabe.png" alt="Perfumes árabes" loading="lazy"></div>
+    <div class="brand-carousel-wrap" aria-label="Carrossel automático de marcas">
+      <div class="brand-track">
+        <div class="brand-item"><img src="assets/marcas/oboticario.png" alt="O Boticário"></div>
+        <div class="brand-item"><img src="assets/marcas/eudora.png" alt="Eudora"></div>
+        <div class="brand-item"><img src="assets/marcas/oui.png" alt="O.U.i"></div>
+        <div class="brand-item"><img src="assets/marcas/avon.png" alt="Avon"></div>
+        <div class="brand-item"><img src="assets/marcas/natura.png" alt="Natura"></div>
+        <div class="brand-item"><img src="assets/marcas/arabes.png" alt="Perfumes árabes"></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/oboticario.png" alt=""></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/eudora.png" alt=""></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/oui.png" alt=""></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/avon.png" alt=""></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/natura.png" alt=""></div>
+        <div class="brand-item" aria-hidden="true"><img src="assets/marcas/arabes.png" alt=""></div>
       </div>
     </div>
-    <p class="carousel-hint">← Deslize para conhecer as marcas →</p>
   </section>
 
   <section class="card social-card" aria-label="Novidades e ofertas">
-    <h2>Não perca as novidades! 💗</h2>
-    <p>Fale com a gente e fique por dentro das fragrâncias e ofertas.</p>
+    <h2>Encontre o perfume que combina com você.</h2>
+    <p>Seja para presentear ou para marcar presença, escolha uma fragrância que conte a sua história. Estamos aqui para ajudar você a encontrar a ideal.</p>
     <div class="social-actions">
-      <a href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
-      <a href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">🛒 Ver produtos</a>
+      <a href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp</a>
+      <a href="http://anaessenci.lojavirtualnuvem.com.br" target="_blank" rel="noopener noreferrer">Conhecer os produtos</a>
     </div>
   </section>
 </main>
 </div>
-
 <footer>
   <strong>Ana Essenci</strong>
-  <p>Perfumes para marcar presença e criar boas lembranças.</p>
+  <p>Uma fragrância, uma lembrança, a sua essência.</p>
   <p>© <span id="year">2026</span> Ana Essenci · Todos os direitos reservados.</p>
-  <p class="legal">CNPJ: 68.366.211/0001-86 · Responsável: Geovane Inacio da Silva</p>
+  <p class="legal">CNPJ: 68.366.211/0001-86</p>
 </footer>
-
 <a class="floating-wa" href="https://wa.me/message/2P6W4E6W5P43N1" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
-  <img src="assets/logo-whatsapp/whatsapp.png" alt="">
+  <svg viewBox="0 0 48 48" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="22" fill="#25D366"/>
+    <path fill="#fff" d="M24 10.2a13.7 13.7 0 0 0-11.8 20.7l-1.8 6.1 6.3-1.7A13.7 13.7 0 1 0 24 10.2Zm0 24.8c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-4.1 1.1 1.1-4-.3-.4A11.1 11.1 0 1 1 24 35Z"/>
+    <path fill="#fff" d="M20 17.8c-.3-.5-.5-.6-.8-.6h-.7c-.3 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.7c.2.2 2.4 3.9 5.9 5.3 2.9 1.2 3.5 1 4.1.8.6-.1 2.1-.9 2.4-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.4-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-.1-.1-1.1-1.2-1.3-1.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7L20 17.8Z"/>
+  </svg>
 </a>
-
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
-
-// Alterna os dois avisos do topo.
 const messages = [...document.querySelectorAll(".top-message")];
 let currentMessage = 0;
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -166,15 +186,6 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     messages[currentMessage].classList.add("active");
   }, 3200);
 }
-
-// Carrossel de marcas: arraste no celular ou use Shift + roda do mouse.
-const carousel = document.getElementById("brandCarousel");
-carousel.addEventListener("wheel", (event) => {
-  if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
-    carousel.scrollLeft += event.deltaY;
-    event.preventDefault();
-  }
-}, {passive:false});
 </script>
 </body>
 </html>
